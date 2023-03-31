@@ -58,5 +58,7 @@ class Combat(Type):
         self.pvpokemonquidef = self.pokemon2.getPV()
         self.defpokemon = self.pokemon2.getDefense()
         attaque_rest = self.pvpokemonquidef - (self.attaquepokemon1 - self.defpokemon)
+        if self.defpokemon >= self.attaquepokemon1:
+            attaque_rest = self.pvpokemonquidef
         self.pokemon2.setPV(attaque_rest)
         print("Il reste", self.pokemon2.getPV(), "PV à", self.pokemon2.getNomPokemon())
