@@ -35,7 +35,7 @@ while not fin_combat:
         combat1.pokemon1 = adversaire1
         combat1.pokemon2 = pokemon1
     combat1.puissance_attaque()
-    print("L'attaque de", combat1.pokemon1.getNomPokemon(), "est de", combat1.pokemon1.getpAttaque(), "contre", combat1.pokemon2.getNomPokemon())
+    print("L'attaque de", combat1.pokemon1.getNomPokemon(), "est de", combat1.pokemon1.getpAttaque(), "contre", combat1.pokemon2.getNomPokemon(),"qui a une défense de", combat1.pokemon2.getDefense())
     combat1.defensepokemon()
     if pokemon1.getPV() <= 0:
         print("Le joueur 2 a gagné")
